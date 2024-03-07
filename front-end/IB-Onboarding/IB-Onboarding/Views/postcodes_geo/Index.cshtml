@@ -1,0 +1,76 @@
+﻿@model IEnumerable<IB_Onboarding.Models.postcodes_geo>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Get your location</h2>
+
+@using (Html.BeginForm("Index", "postcodes_geo", FormMethod.Get, new { @class = "input-group mb-3" }))
+{
+    <input type="text" name="searchString" class="form-control" placeholder="Search by suburb or postcode..." aria-label="Search by suburb or postcode..." aria-describedby="button-addon2">
+    <button class="btn btn-primary" type="submit" id="button-addon2">Search</button>
+}
+<div class="alert alert-danger" id="location-alert" role="alert" style="display:none">
+    Some error occurs, please try again.
+</div>
+
+@if (Model != null && Model.Any())
+{
+    <div class="row">
+        @foreach (var item in Model)
+        {
+            <div class="col-md-4 mb-3">
+                <div class="card h-100">
+                    <div class="row g-0">
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">@Html.DisplayFor(modelItem => item.suburb)</h5>
+                                <p class="card-text">
+                                    <strong>Postcode:</strong> @Html.DisplayFor(modelItem => item.postcode)<br />
+                                    <strong>State:</strong> @Html.DisplayFor(modelItem => item.state)
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 d-flex align-items-center">
+                            <button class="btn btn-primary" data-lat="@item.latitude" data-lon="@item.longitude" data-suburb="@item.suburb" data-state="@item.state" onclick="getWeather(this)">Select</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+
+
+
+    </div>
+
+}
+else { 
+    <div style="height:300px"></div>
+}
+<script>
+    function getWeather(element) {
+        var latitude = $(element).data("lat");
+        var longitude = $(element).data("lon");
+        var suburb = $(element).data("suburb");
+        var state = $(element).data("state");
+        var apiKey = "e78461397ab891f65bb668ab61a1bea9";
+        var apiUrl = `https://api.openweathermap.org/data/3.0/onecall?lat=${latitude}&lon=${longitude}&exclude=minutely,daily&appid=${apiKey}`;
+        $.ajax({
+            url: apiUrl,
+            type: "GET",
+            success: function () {
+                document.getElementById("location-alert").style.display = "none";
+                localStorage.setItem("suburb", suburb + ', ' + state)
+                localStorage.setItem("latitude", latitude);
+                localStorage.setItem("longitude", longitude);
+                window.location.href="/"
+            },
+            error: function (error) {
+                console.error(error); // Handle errors
+                document.getElementById("location-alert").style.display = "block";
+            }
+        });
+    }
+</script>

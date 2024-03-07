@@ -1,0 +1,126 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+<style>
+    .gradient-div {
+        height: 400px;
+        background: linear-gradient(to right, white, #b8bdd0, #6f7eb5, #4a5ea7, #2b429b, #0e2a90);
+    }
+
+    h3 {
+        text-align: center;
+        color: white;
+        height: 150px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .spinner-grow {
+        transition: none !important;
+    }
+
+    .circle-container {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #uvi {
+        position: absolute;
+        text-align: center;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 22px;
+    }
+</style>
+<div class="gradient-div">
+    <h3>Forecast UV Index</h3>
+    <div class="row">
+        <div class="col"></div>
+        <div class="col" style="display:flex;align-items:center;justify-content:center;">
+            <div class="circle-container">
+                <svg height="200" width="200" xmlns="http://www.w3.org/2000/svg">
+                    <circle id="uvCircle" cx="100" cy="100" r="80" stroke="blue" stroke-width="20" fill="transparent" />
+                </svg>
+                <span id="uvi"></span>
+            </div>
+        </div>
+        <div class="col" style="color:white;font-size:20px">
+            <div id="location-hours"></div>
+            <div id="weather-description"></div>
+        </div>
+    </div>
+</div>
+
+<script>
+    // This script checks if the 'suburb' value exists in local storage and updates the 'place' span
+    document.addEventListener("DOMContentLoaded", function () {
+
+        // Retrieve the suburb value from local storage
+        var latitude = localStorage.getItem('latitude');
+        var longitude = localStorage.getItem('longitude');
+        var uvi = document.getElementById('uvi');
+        if (latitude && longitude) {
+            var apiKey = "e78461397ab891f65bb668ab61a1bea9";
+            var apiUrl = `https://api.openweathermap.org/data/3.0/onecall?lat=${latitude}&lon=${longitude}&exclude=minutely,daily&appid=${apiKey}`;
+            $.ajax({
+                url: apiUrl,
+                type: "GET",
+                success: function (response) {
+                    localStorage.setItem("uv-information", JSON.stringify(response))
+                    var uv_info_str = localStorage.getItem('uv-information');
+                    var color;
+
+
+
+                    const uv_info = JSON.parse(uv_info_str);
+                    uv = uv_info.hourly[0].uvi;
+                    if (uv > 0 && uv <= 3) {
+                        color = 'green';
+                    } else if (uv > 3 && uv <= 5) {
+                        color = 'yellow';
+                    } else if (uv > 5 && uv <= 8) {
+                        color = 'orange';
+                    } else if (uv > 8 && uv <= 11) {
+                        color = 'red';
+                    } else if (uv > 10) {
+                        color = 'purple';
+                    } else {
+                        color = 'blue';
+                    }
+                    uvi.innerHTML = "<span style='color:white'>UV Level</span><br/><span style='color:" + color + "'>" + uv + "</span>";
+                    document.getElementById('uvCircle').setAttribute('stroke', color);
+
+                    var location_start_timestamp = uv_info.hourly[0].dt;
+                    var date_start = transferHour(location_start_timestamp);
+
+                    var location_end_timestamp = uv_info.hourly[1].dt;
+                    var date_end = transferHour(location_end_timestamp);
+                    document.getElementById('location-hours').innerHTML = "<b>" + date_start + "</b> to <b>" + date_end + "</b>";
+
+                    document.getElementById('weather-description').innerHTML = uv_info.hourly[0].weather[0].description;
+
+
+                },
+                error: function (error) {
+                    console.error(error); // Handle errors
+                    uvi.innerHTML = "UV Error";
+                }
+            });
+        } else {
+            uvi.innerHTML = "No UV";
+        }
+
+
+    });
+
+    function transferHour(location_timestamp) {
+        var date = new Date(location_timestamp * 1000); // convert to milliseconds
+        var formatted_time = date.getHours().toString().padStart(2, '0') + ':' +
+            date.getMinutes().toString().padStart(2, '0');
+        return formatted_time;
+    }
+</script>
