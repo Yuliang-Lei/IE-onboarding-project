@@ -30,5 +30,10 @@ namespace IB_Onboarding.Controllers
         {
             return View();
         }
+
+        public ActionResult Reminder()
+        {
+            return View();
+        }
     }
 }

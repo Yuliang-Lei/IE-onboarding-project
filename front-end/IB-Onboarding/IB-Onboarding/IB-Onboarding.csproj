@@ -352,6 +352,7 @@
     <Content Include="Content\DataTables\css\semanticui.scss" />
     <Content Include="Content\DataTables\css\mixins.scss" />
     <Content Include="Content\DataTables\css\common.scss" />
+    <Content Include="Public\sunscreen_reminder.pdf" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\DataTables\autoFill.bootstrap.js" />
     <Content Include="Scripts\DataTables\autoFill.bootstrap.min.js" />
@@ -456,6 +457,7 @@
     <Content Include="Views\Home\Tips.cshtml" />
     <Content Include="Views\postcodes_geo\Index.cshtml" />
     <Content Include="Views\Shared\Menu.cshtml" />
+    <Content Include="Views\Home\Reminder.cshtml" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>

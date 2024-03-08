@@ -1,0 +1,36 @@
+﻿
+@{
+    ViewBag.Title = "Reminder";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Reminder</h2>
+<div class="d-flex align-items-start">
+    <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+        <button class="nav-link active" id="v-pills-reminder-tab" data-bs-toggle="pill" data-bs-target="#v-pills-reminder" type="button" role="tab" aria-controls="v-pills-reminder" aria-selected="true">Reminder</button>
+        <button class="nav-link" id="v-pills-track-tab" data-bs-toggle="pill" data-bs-target="#v-pills-track" type="button" role="tab" aria-controls="v-pills-track" aria-selected="false">Track Reminder</button>
+    </div>
+    <div class="tab-content" id="v-pills-tabContent" style="height:200px">
+        <div class="tab-pane fade show active" id="v-pills-reminder" role="tabpanel" aria-labelledby="v-pills-reminder-tab" tabindex="0">
+            <h3>Please get the reminder by downloading the reminder PDF file bwlow:</h3>
+            <div style="text-align:center;margin-top:20px">
+                <a href="~/Public/sunscreen_reminder.pdf" id="downloadButton" class="btn btn-warning btn-lg" style="text-decoration:none; display: inline-block;">
+                    Reminder
+                </a>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="v-pills-track" role="tabpanel" aria-labelledby="v-pills-track-tab" tabindex="0">222</div>
+    </div>
+</div>
+
+<script>
+    document.getElementById('downloadButton').addEventListener('click', function () {
+        var reminder_list = localStorage.getItem('reminder_list') ? localStorage.getItem('reminder_list') : [];
+        var time_now = Date.now();
+        console.log(time_now);
+        reminder_list.push(time_now)
+        localStorage.setItem('reminder_list', reminder_list);
+    });
+
+</script>
+
