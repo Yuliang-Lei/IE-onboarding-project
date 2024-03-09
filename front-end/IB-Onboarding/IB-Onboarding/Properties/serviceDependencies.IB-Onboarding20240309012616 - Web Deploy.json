@@ -1,0 +1,12 @@
+{
+  "dependencies": {
+    "mssql1": {
+      "serviceConnectorResourceId": "/subscriptions/[parameters('subscriptionId')]/resourcegroups/[parameters('resourceGroupName')]/providers/Microsoft.Web/sites/IB-Onboarding20240309012616/providers/Microsoft.ServiceLinker/linkers/locationModel_614AD9E424",
+      "secretStore": "AzureAppSettings",
+      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroupName')]/providers/Microsoft.Sql/servers/ib-onboardingdbserver/databases/IB-Onboarding_db",
+      "type": "mssql.azure",
+      "connectionId": "locationModel",
+      "dynamicId": null
+    }
+  }
+}

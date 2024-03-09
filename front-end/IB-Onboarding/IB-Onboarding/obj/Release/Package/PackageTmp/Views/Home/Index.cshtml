@@ -1,0 +1,159 @@
+﻿@{
+    ViewBag.Title = "Home";
+}
+<style>
+    .gradient-div {
+        height: 400px;
+        background: linear-gradient(to right, #b8bdd0, #6f7eb5, #4a5ea7, #2b429b, #0e2a90);
+    }
+
+    h3 {
+        text-align: center;
+        color: white;
+        height: 150px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .spinner-grow {
+        transition: none !important;
+    }
+
+    .circle-container {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .circle-center {
+        position: absolute;
+        text-align: center;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 22px;
+    }
+</style>
+<div class="gradient-div">
+    <h3>Forecast UV Index</h3>
+    <div class="row">
+        <div class="col" style="text-align:center;color:white;font-size:20px">
+            <div class="circle-container">
+                <svg height="200" width="200" xmlns="http://www.w3.org/2000/svg">
+                    <circle id="tempCircle" cx="100" cy="100" r="80" stroke="white" stroke-width="15" fill="transparent" />
+                </svg>
+                <span class="circle-center" id="temperature"></span>
+            </div>
+        </div>
+        <div class="col" style="display:flex;align-items:center;justify-content:center;">
+            <div class="circle-container">
+                <svg height="200" width="200" xmlns="http://www.w3.org/2000/svg">
+                    <circle id="uvCircle" cx="100" cy="100" r="80" stroke="white" stroke-width="15" fill="transparent" />
+                </svg>
+                <span class="circle-center" id="uvi"></span>
+            </div>
+        </div>
+        <div class="col" style="color:white;font-size:20px">
+            <div id="location-hours"></div>
+            <div id="weather-description"></div>
+            <div id="humidity"></div>
+            <br/>
+            <a href="/Home/Tips" id="home-btn" class="btn btn-outline-light"></a>
+        </div>
+    </div>
+</div>
+
+<script>
+    // This script checks if the 'suburb' value exists in local storage and updates the 'place' span
+    document.addEventListener("DOMContentLoaded", function () {
+
+        // Retrieve the suburb value from local storage
+        var suburb = localStorage.getItem('suburb');
+        var latitude = localStorage.getItem('latitude');
+        var longitude = localStorage.getItem('longitude');
+        var uvi = document.getElementById('uvi');
+        var home_btn = document.getElementById('home-btn');
+        if (latitude && longitude) {
+            var apiKey = "e78461397ab891f65bb668ab61a1bea9";
+            var apiUrl = `https://api.openweathermap.org/data/3.0/onecall?lat=${latitude}&lon=${longitude}&units=metric&exclude=minutely,daily&appid=${apiKey}`;
+            $.ajax({
+                url: apiUrl,
+                type: "GET",
+                success: function (response) {
+                    localStorage.setItem("uv-information", JSON.stringify(response))
+                    var uv_info_str = localStorage.getItem('uv-information');
+                    var color;
+                    var temp_color;
+
+
+
+                    const uv_info = JSON.parse(uv_info_str);
+                    uv = uv_info.hourly[0].uvi;
+                    if (uv > 0 && uv <= 3) {
+                        color = 'green';
+                    } else if (uv > 3 && uv <= 5) {
+                        color = 'yellow';
+                    } else if (uv > 5 && uv <= 8) {
+                        color = 'orange';
+                    } else if (uv > 8 && uv <= 11) {
+                        color = 'red';
+                    } else if (uv > 10) {
+                        color = 'purple';
+                    } else {
+                        color = 'white';
+                    }
+                    uvi.innerHTML = "<span style='color:white'>UV Level</span><br/><span style='color:" + color + "'>" + uv + "</span>";
+                    document.getElementById('uvCircle').setAttribute('stroke', color);
+
+                    var location_start_timestamp = uv_info.hourly[0].dt;
+                    var date_start = transferHour(location_start_timestamp);
+
+                    var location_end_timestamp = uv_info.hourly[1].dt;
+                    var date_end = transferHour(location_end_timestamp);
+                    document.getElementById('location-hours').innerHTML = "<b>" + date_start + "</b> to <b>" + date_end + "</b> in " + suburb + ":<br/>";
+
+                    document.getElementById('weather-description').innerHTML ="<span><b>Weather: </b></span>" + uv_info.hourly[0].weather[0].description;
+
+                    temp = uv_info.hourly[0].temp;
+                    if (temp > 0 && temp <= 10) {
+                        temp_color = 'blue';
+                    } else if (temp > 10 && temp <= 20) {
+                        temp_color = 'yellow';
+                    } else if (temp > 20 && temp <= 30) {
+                        temp_color = 'orange';
+                    } else if (temp > 30) {
+                        temp_color = 'red';
+                    } else {
+                        temp_color = 'white';
+                    }
+                    document.getElementById('tempCircle').setAttribute('stroke', temp_color);
+                    document.getElementById('temperature').innerHTML = "<span style='color:" + temp_color + "'>" + parseInt(uv_info.hourly[0].temp) + " &deg;C</span>";
+                    document.getElementById('humidity').innerHTML = "<span><b>Humidity: </b></span>" + uv_info.hourly[0].humidity + " %";
+                    home_btn.innerHTML = "Watch Tips";
+                    home_btn.setAttribute('href', '/Home/Tips');
+
+
+                },
+                error: function (error) {
+                    console.error(error); // Handle errors
+                    uvi.innerHTML = "UV Error";
+                }
+            });
+        } else {
+            uvi.innerHTML = "No UV";
+            home_btn.innerHTML = "Set Location";
+            home_btn.setAttribute('href', '/postcodes_geo');
+        }
+
+
+    });
+
+    function transferHour(location_timestamp) {
+        var date = new Date(location_timestamp * 1000); // convert to milliseconds
+        var formatted_time = date.getHours().toString().padStart(2, '0') + ':' +
+            date.getMinutes().toString().padStart(2, '0');
+        return formatted_time;
+    }
+</script>

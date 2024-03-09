@@ -1,5 +1,4 @@
-﻿
-@{
+﻿@{
     ViewBag.Title = "Reminder";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
@@ -12,25 +11,102 @@
     </div>
     <div class="tab-content" id="v-pills-tabContent" style="height:200px">
         <div class="tab-pane fade show active" id="v-pills-reminder" role="tabpanel" aria-labelledby="v-pills-reminder-tab" tabindex="0">
-            <h3>Please get the reminder by downloading the reminder PDF file bwlow:</h3>
+            <h4>Please get the reminder by downloading the reminder PDF file below:</h4>
             <div style="text-align:center;margin-top:20px">
-                <a href="~/Public/sunscreen_reminder.pdf" id="downloadButton" class="btn btn-warning btn-lg" style="text-decoration:none; display: inline-block;">
+                <a href="~/Public/sunscreen_reminder.pdf" id="downloadButton" class="btn btn-warning btn-lg" style="text-decoration:none; display: inline-block;" target="_blank">
                     Reminder
                 </a>
             </div>
         </div>
-        <div class="tab-pane fade" id="v-pills-track" role="tabpanel" aria-labelledby="v-pills-track-tab" tabindex="0">222</div>
+        <div class="tab-pane fade" id="v-pills-track" role="tabpanel" aria-labelledby="v-pills-track-tab" tabindex="0">
+            <div id="trackContainer"></div> <!-- Container for the cards -->
+        </div>
     </div>
 </div>
 
 <script>
     document.getElementById('downloadButton').addEventListener('click', function () {
-        var reminder_list = localStorage.getItem('reminder_list') ? localStorage.getItem('reminder_list') : [];
-        var time_now = Date.now();
-        console.log(time_now);
-        reminder_list.push(time_now)
-        localStorage.setItem('reminder_list', reminder_list);
+        // Retrieve the reminder_list from localStorage and parse it as an array
+        var reminder_list = JSON.parse(localStorage.getItem('reminder_list'));
+
+        // If reminder_list does not exist, initialize it as an empty array
+        if (!reminder_list) {
+            reminder_list = [];
+        }
+
+        // Get the current timestamp
+        var time_now = new Date().toISOString();
+
+        // Add the timestamp to the reminder_list
+        reminder_list.push(time_now);
+
+        // Save the updated reminder_list back to localStorage as a string
+        localStorage.setItem('reminder_list', JSON.stringify(reminder_list));
+        location.reload();
+    });
+</script>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        loadReminders();
     });
 
+    function loadReminders() {
+        // Retrieve and parse the reminder_list from localStorage
+        var reminder_list = JSON.parse(localStorage.getItem('reminder_list'));
+
+        if (reminder_list && reminder_list.length) {
+            var trackContainer = document.getElementById('trackContainer');
+            trackContainer.innerHTML = ''; // Clear existing content
+
+            // Group the reminders by date
+            var groupedReminders = groupRemindersByDate(reminder_list);
+
+            // Display each group with its date and times in Bootstrap cards
+            for (var date in groupedReminders) {
+                var dateHeader = document.createElement('span');
+                dateHeader.className = "badge text-bg-primary";
+                dateHeader.style.marginBottom = "10px";
+                dateHeader.textContent = date;
+                trackContainer.appendChild(dateHeader);
+
+                var row = document.createElement('div');
+                row.className = 'row';
+
+                groupedReminders[date].forEach(function (time) {
+                    var col = document.createElement('div');
+                    col.className = 'col';
+
+                    var card = document.createElement('span');
+                    card.className = 'badge text-bg-info';
+                    card.textContent = time;
+
+                    col.appendChild(card);
+                    row.appendChild(col);
+                });
+
+                trackContainer.appendChild(row);
+            }
+        }
+    }
+
+    function groupRemindersByDate(reminder_list) {
+        var groups = {};
+        reminder_list.forEach(function (timestamp) {
+            var date = new Date(timestamp);
+            // Change date format to dd/mm/yyyy
+            var dateString = date.toLocaleDateString('en-GB'); // en-GB locale uses dd/mm/yyyy format
+            var timeString = date.getHours().toString().padStart(2, '0') + ':' + date.getMinutes().toString().padStart(2, '0');
+
+            if (!groups[dateString]) {
+                groups[dateString] = [];
+            }
+            groups[dateString].push(timeString);
+        });
+        return groups;
+    }
 </script>
+
+
+
+
 

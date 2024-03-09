@@ -1,0 +1,40 @@
+{
+  "dependencies": {
+    "mssql1": {
+      "restored": true,
+      "restoreTime": "2024-03-08T15:03:14.0245791Z"
+    }
+  },
+  "parameters": {
+    "IB-Onboarding20240309012616.subscriptionId": {
+      "Name": "IB-Onboarding20240309012616.subscriptionId",
+      "Type": "subscription",
+      "Value": "d2280229-130a-4e91-b15c-7554f831e190"
+    },
+    "mssql1.subscriptionId": {
+      "Name": "mssql1.subscriptionId",
+      "Type": "subscription",
+      "Value": "d2280229-130a-4e91-b15c-7554f831e190"
+    },
+    "IB-Onboarding20240309012616.resourceName": {
+      "Name": "IB-Onboarding20240309012616.resourceName",
+      "Type": null,
+      "Value": "IB-Onboarding20240309012616"
+    },
+    "IB-Onboarding20240309012616.resourceGroupLocation": {
+      "Name": "IB-Onboarding20240309012616.resourceGroupLocation",
+      "Type": null,
+      "Value": "australiaeast"
+    },
+    "mssql1.resourceGroupName": {
+      "Name": "mssql1.resourceGroupName",
+      "Type": "resourceGroup",
+      "Value": "Onboarding-project"
+    },
+    "IB-Onboarding20240309012616.resourceGroupName": {
+      "Name": "IB-Onboarding20240309012616.resourceGroupName",
+      "Type": "resourceGroup",
+      "Value": "Onboarding-project"
+    }
+  }
+}

@@ -1,0 +1,50 @@
+﻿<div class="row">
+    <div class="col"></div>
+    <div class="col" style="display:flex;align-items:center;justify-content:center">
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16" color="#13237a" style="margin-right:10px">
+            <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6" />
+        </svg>
+        <span id="place"></span>
+        <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            @Html.ActionLink("change location", "Index", "postcodes_geo", new { area = "" }, new { @class = "nav-link" })
+        </button>
+    </div>
+    <div class="col"></div>
+</div>
+
+
+<div class="row" style="align-items: flex-end;">
+    <div class="col-4" style="display:flex;align-items:center;justify-content:center">
+        <a href="/home"><img src="~/Public/logo.png" alt="logo" style="height:150px"></a>
+    </div>
+    <div class="col-8">
+        <nav class="navbar navbar-expand-sm" style="height: 100%;">
+            <div class="collapse navbar-collapse d-sm-inline-flex justify-content-between">
+                <ul class="navbar-nav flex-grow-1">
+                    <li>@Html.ActionLink("Tips", "Tips", "Home", new { area = "" }, new { @class = "nav-link" })</li>
+                    <li>@Html.ActionLink("Reminder", "Reminder", "Home", new { area = "" }, new { @class = "nav-link" })</li>
+                    <li>@Html.ActionLink("Learn more", "Contact", "Home", new { area = "" }, new { @class = "nav-link" })</li>
+                    <li>@Html.ActionLink("About us", "About", "Home", new { area = "" }, new { @class = "nav-link" })</li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+</div>
+
+<script>
+    // This script checks if the 'suburb' value exists in local storage and updates the 'place' span
+    document.addEventListener("DOMContentLoaded", function () {
+        // Retrieve the suburb value from local storage
+        var suburb = localStorage.getItem('suburb');
+        var placeSpan = document.getElementById('place');
+
+        // Check if the suburb value exists
+        if (suburb) {
+            // Set the suburb value to the span's innerHTML
+            placeSpan.innerHTML = suburb;
+        } else {
+            placeSpan.innerHTML = 'Please select a location.'
+        }
+    });
+</script>

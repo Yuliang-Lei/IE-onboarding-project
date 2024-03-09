@@ -3,28 +3,44 @@
   "WorkspaceRootPath": "F:\\Repositories\\IE-onboarding-project\\front-end\\IB-Onboarding\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0B92B336-9E68-444B-88F4-E6DAF9DECD41}|IB-Onboarding\\IB-Onboarding.csproj|f:\\repositories\\ie-onboarding-project\\front-end\\ib-onboarding\\ib-onboarding\\views\\home\\reminder.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{0B92B336-9E68-444B-88F4-E6DAF9DECD41}|IB-Onboarding\\IB-Onboarding.csproj|solutionrelative:ib-onboarding\\views\\home\\reminder.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{0B92B336-9E68-444B-88F4-E6DAF9DECD41}|IB-Onboarding\\IB-Onboarding.csproj|F:\\Repositories\\IE-onboarding-project\\front-end\\IB-Onboarding\\ib-onboarding\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0B92B336-9E68-444B-88F4-E6DAF9DECD41}|IB-Onboarding\\IB-Onboarding.csproj|solutionrelative:ib-onboarding\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0B92B336-9E68-444B-88F4-E6DAF9DECD41}|IB-Onboarding\\IB-Onboarding.csproj|F:\\Repositories\\IE-onboarding-project\\front-end\\IB-Onboarding\\ib-onboarding\\views\\shared\\menu.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{0B92B336-9E68-444B-88F4-E6DAF9DECD41}|IB-Onboarding\\IB-Onboarding.csproj|f:\\repositories\\ie-onboarding-project\\front-end\\ib-onboarding\\ib-onboarding\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0B92B336-9E68-444B-88F4-E6DAF9DECD41}|IB-Onboarding\\IB-Onboarding.csproj|solutionrelative:ib-onboarding\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B92B336-9E68-444B-88F4-E6DAF9DECD41}|IB-Onboarding\\IB-Onboarding.csproj|F:\\Repositories\\IE-onboarding-project\\front-end\\IB-Onboarding\\ib-onboarding\\views\\home\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0B92B336-9E68-444B-88F4-E6DAF9DECD41}|IB-Onboarding\\IB-Onboarding.csproj|solutionrelative:ib-onboarding\\views\\home\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B92B336-9E68-444B-88F4-E6DAF9DECD41}|IB-Onboarding\\IB-Onboarding.csproj|F:\\Repositories\\IE-onboarding-project\\front-end\\IB-Onboarding\\ib-onboarding\\views\\home\\tips.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0B92B336-9E68-444B-88F4-E6DAF9DECD41}|IB-Onboarding\\IB-Onboarding.csproj|solutionrelative:ib-onboarding\\views\\home\\tips.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B92B336-9E68-444B-88F4-E6DAF9DECD41}|IB-Onboarding\\IB-Onboarding.csproj|f:\\repositories\\ie-onboarding-project\\front-end\\ib-onboarding\\ib-onboarding\\views\\shared\\menu.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{0B92B336-9E68-444B-88F4-E6DAF9DECD41}|IB-Onboarding\\IB-Onboarding.csproj|solutionrelative:ib-onboarding\\views\\shared\\menu.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0B92B336-9E68-444B-88F4-E6DAF9DECD41}|IB-Onboarding\\IB-Onboarding.csproj|f:\\repositories\\ie-onboarding-project\\front-end\\ib-onboarding\\ib-onboarding\\views\\home\\tips.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{0B92B336-9E68-444B-88F4-E6DAF9DECD41}|IB-Onboarding\\IB-Onboarding.csproj|solutionrelative:ib-onboarding\\views\\home\\tips.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{0B92B336-9E68-444B-88F4-E6DAF9DECD41}|IB-Onboarding\\IB-Onboarding.csproj|F:\\Repositories\\IE-onboarding-project\\front-end\\IB-Onboarding\\ib-onboarding\\views\\home\\contact.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0B92B336-9E68-444B-88F4-E6DAF9DECD41}|IB-Onboarding\\IB-Onboarding.csproj|solutionrelative:ib-onboarding\\views\\home\\contact.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B92B336-9E68-444B-88F4-E6DAF9DECD41}|IB-Onboarding\\IB-Onboarding.csproj|F:\\Repositories\\IE-onboarding-project\\front-end\\IB-Onboarding\\ib-onboarding\\models\\postcodes_geo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0B92B336-9E68-444B-88F4-E6DAF9DECD41}|IB-Onboarding\\IB-Onboarding.csproj|solutionrelative:ib-onboarding\\models\\postcodes_geo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B92B336-9E68-444B-88F4-E6DAF9DECD41}|IB-Onboarding\\IB-Onboarding.csproj|F:\\Repositories\\IE-onboarding-project\\front-end\\IB-Onboarding\\ib-onboarding\\models\\locationmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0B92B336-9E68-444B-88F4-E6DAF9DECD41}|IB-Onboarding\\IB-Onboarding.csproj|solutionrelative:ib-onboarding\\models\\locationmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0B92B336-9E68-444B-88F4-E6DAF9DECD41}|IB-Onboarding\\IB-Onboarding.csproj|F:\\Repositories\\IE-onboarding-project\\front-end\\IB-Onboarding\\ib-onboarding\\views\\postcodes_geo\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{0B92B336-9E68-444B-88F4-E6DAF9DECD41}|IB-Onboarding\\IB-Onboarding.csproj|solutionrelative:ib-onboarding\\views\\postcodes_geo\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0B92B336-9E68-444B-88F4-E6DAF9DECD41}|IB-Onboarding\\IB-Onboarding.csproj|f:\\repositories\\ie-onboarding-project\\front-end\\ib-onboarding\\ib-onboarding\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{0B92B336-9E68-444B-88F4-E6DAF9DECD41}|IB-Onboarding\\IB-Onboarding.csproj|solutionrelative:ib-onboarding\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0B92B336-9E68-444B-88F4-E6DAF9DECD41}|IB-Onboarding\\IB-Onboarding.csproj|F:\\Repositories\\IE-onboarding-project\\front-end\\IB-Onboarding\\ib-onboarding\\views\\home\\contact.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{0B92B336-9E68-444B-88F4-E6DAF9DECD41}|IB-Onboarding\\IB-Onboarding.csproj|solutionrelative:ib-onboarding\\views\\home\\contact.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{0B92B336-9E68-444B-88F4-E6DAF9DECD41}|IB-Onboarding\\IB-Onboarding.csproj|F:\\Repositories\\IE-onboarding-project\\front-end\\IB-Onboarding\\ib-onboarding\\views\\home\\reminder.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0B92B336-9E68-444B-88F4-E6DAF9DECD41}|IB-Onboarding\\IB-Onboarding.csproj|solutionrelative:ib-onboarding\\views\\home\\reminder.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,45 +50,44 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "F:\\Repositories\\IE-onboarding-project\\front-end\\IB-Onboarding\\IB-Onboarding\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "IB-Onboarding\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "F:\\Repositories\\IE-onboarding-project\\front-end\\IB-Onboarding\\IB-Onboarding\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "IB-Onboarding\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-03-09T01:27:41.718Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "postcodes_geo.cs",
+              "DocumentMoniker": "F:\\Repositories\\IE-onboarding-project\\front-end\\IB-Onboarding\\IB-Onboarding\\Models\\postcodes_geo.cs",
+              "RelativeDocumentMoniker": "IB-Onboarding\\Models\\postcodes_geo.cs",
+              "ToolTip": "F:\\Repositories\\IE-onboarding-project\\front-end\\IB-Onboarding\\IB-Onboarding\\Models\\postcodes_geo.cs",
+              "RelativeToolTip": "IB-Onboarding\\Models\\postcodes_geo.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-08T13:33:55.731Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "Tips.cshtml",
               "DocumentMoniker": "F:\\Repositories\\IE-onboarding-project\\front-end\\IB-Onboarding\\IB-Onboarding\\Views\\Home\\Tips.cshtml",
               "RelativeDocumentMoniker": "IB-Onboarding\\Views\\Home\\Tips.cshtml",
               "ToolTip": "F:\\Repositories\\IE-onboarding-project\\front-end\\IB-Onboarding\\IB-Onboarding\\Views\\Home\\Tips.cshtml",
               "RelativeToolTip": "IB-Onboarding\\Views\\Home\\Tips.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAABKAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-03-08T00:49:08.347Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Reminder.cshtml",
-              "DocumentMoniker": "F:\\Repositories\\IE-onboarding-project\\front-end\\IB-Onboarding\\IB-Onboarding\\Views\\Home\\Reminder.cshtml",
-              "RelativeDocumentMoniker": "IB-Onboarding\\Views\\Home\\Reminder.cshtml",
-              "ToolTip": "F:\\Repositories\\IE-onboarding-project\\front-end\\IB-Onboarding\\IB-Onboarding\\Views\\Home\\Reminder.cshtml",
-              "RelativeToolTip": "IB-Onboarding\\Views\\Home\\Reminder.cshtml",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAABYAAAAKAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-03-08T00:48:09.188Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "F:\\Repositories\\IE-onboarding-project\\front-end\\IB-Onboarding\\IB-Onboarding\\Views\\postcodes_geo\\Index.cshtml",
-              "RelativeDocumentMoniker": "IB-Onboarding\\Views\\postcodes_geo\\Index.cshtml",
-              "ToolTip": "F:\\Repositories\\IE-onboarding-project\\front-end\\IB-Onboarding\\IB-Onboarding\\Views\\postcodes_geo\\Index.cshtml",
-              "RelativeToolTip": "IB-Onboarding\\Views\\postcodes_geo\\Index.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEQAAAAOAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-03-07T12:19:10.441Z",
+              "WhenOpened": "2024-03-08T12:23:41.966Z",
               "EditorCaption": ""
             },
             {
@@ -83,34 +98,83 @@
               "RelativeDocumentMoniker": "IB-Onboarding\\Views\\Home\\Contact.cshtml",
               "ToolTip": "F:\\Repositories\\IE-onboarding-project\\front-end\\IB-Onboarding\\IB-Onboarding\\Views\\Home\\Contact.cshtml",
               "RelativeToolTip": "IB-Onboarding\\Views\\Home\\Contact.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAdAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAhAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-03-07T10:19:34.598Z"
+              "WhenOpened": "2024-03-08T12:23:07.629Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Menu.cshtml",
-              "DocumentMoniker": "F:\\Repositories\\IE-onboarding-project\\front-end\\IB-Onboarding\\IB-Onboarding\\Views\\Shared\\Menu.cshtml",
-              "RelativeDocumentMoniker": "IB-Onboarding\\Views\\Shared\\Menu.cshtml",
-              "ToolTip": "F:\\Repositories\\IE-onboarding-project\\front-end\\IB-Onboarding\\IB-Onboarding\\Views\\Shared\\Menu.cshtml",
-              "RelativeToolTip": "IB-Onboarding\\Views\\Shared\\Menu.cshtml",
-              "ViewState": "AQIAAAoAAAAAAAAAAAAgwBgAAAAtAAAA",
+              "DocumentIndex": 2,
+              "Title": "About.cshtml",
+              "DocumentMoniker": "F:\\Repositories\\IE-onboarding-project\\front-end\\IB-Onboarding\\IB-Onboarding\\Views\\Home\\About.cshtml",
+              "RelativeDocumentMoniker": "IB-Onboarding\\Views\\Home\\About.cshtml",
+              "ToolTip": "F:\\Repositories\\IE-onboarding-project\\front-end\\IB-Onboarding\\IB-Onboarding\\Views\\Home\\About.cshtml",
+              "RelativeToolTip": "IB-Onboarding\\Views\\Home\\About.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAATAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-03-07T04:24:43.752Z",
+              "WhenOpened": "2024-03-08T12:22:51.996Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 8,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "F:\\Repositories\\IE-onboarding-project\\front-end\\IB-Onboarding\\IB-Onboarding\\Views\\postcodes_geo\\Index.cshtml",
+              "RelativeDocumentMoniker": "IB-Onboarding\\Views\\postcodes_geo\\Index.cshtml",
+              "ToolTip": "F:\\Repositories\\IE-onboarding-project\\front-end\\IB-Onboarding\\IB-Onboarding\\Views\\postcodes_geo\\Index.cshtml",
+              "RelativeToolTip": "IB-Onboarding\\Views\\postcodes_geo\\Index.cshtml",
+              "ViewState": "AQIAAAQAAAAAAAAAAAAgwAkAAABdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-03-08T12:16:33.043Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Reminder.cshtml",
+              "DocumentMoniker": "F:\\Repositories\\IE-onboarding-project\\front-end\\IB-Onboarding\\IB-Onboarding\\Views\\Home\\Reminder.cshtml",
+              "RelativeDocumentMoniker": "IB-Onboarding\\Views\\Home\\Reminder.cshtml",
+              "ToolTip": "F:\\Repositories\\IE-onboarding-project\\front-end\\IB-Onboarding\\IB-Onboarding\\Views\\Home\\Reminder.cshtml",
+              "RelativeToolTip": "IB-Onboarding\\Views\\Home\\Reminder.cshtml",
+              "ViewState": "AQIAABgAAAAAAAAAAAAAACwAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-03-08T11:57:45.822Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "Index.cshtml",
               "DocumentMoniker": "F:\\Repositories\\IE-onboarding-project\\front-end\\IB-Onboarding\\IB-Onboarding\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "IB-Onboarding\\Views\\Home\\Index.cshtml",
               "ToolTip": "F:\\Repositories\\IE-onboarding-project\\front-end\\IB-Onboarding\\IB-Onboarding\\Views\\Home\\Index.cshtml",
               "RelativeToolTip": "IB-Onboarding\\Views\\Home\\Index.cshtml",
-              "ViewState": "AQIAAGEAAAAAAAAAAAAgwGoAAAASAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAZAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-03-07T04:20:22.505Z",
+              "WhenOpened": "2024-03-08T11:22:16.47Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "locationModel.cs",
+              "DocumentMoniker": "F:\\Repositories\\IE-onboarding-project\\front-end\\IB-Onboarding\\IB-Onboarding\\Models\\locationModel.cs",
+              "RelativeDocumentMoniker": "IB-Onboarding\\Models\\locationModel.cs",
+              "ToolTip": "F:\\Repositories\\IE-onboarding-project\\front-end\\IB-Onboarding\\IB-Onboarding\\Models\\locationModel.cs",
+              "RelativeToolTip": "IB-Onboarding\\Models\\locationModel.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAAwAYAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-08T13:34:02.548Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Menu.cshtml",
+              "DocumentMoniker": "F:\\Repositories\\IE-onboarding-project\\front-end\\IB-Onboarding\\IB-Onboarding\\Views\\Shared\\Menu.cshtml",
+              "RelativeDocumentMoniker": "IB-Onboarding\\Views\\Shared\\Menu.cshtml",
+              "ToolTip": "F:\\Repositories\\IE-onboarding-project\\front-end\\IB-Onboarding\\IB-Onboarding\\Views\\Shared\\Menu.cshtml",
+              "RelativeToolTip": "IB-Onboarding\\Views\\Shared\\Menu.cshtml",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABYAAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-03-08T11:55:58.791Z",
               "EditorCaption": ""
             }
           ]

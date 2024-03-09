@@ -56,7 +56,7 @@ else {
         var suburb = $(element).data("suburb");
         var state = $(element).data("state");
         var apiKey = "e78461397ab891f65bb668ab61a1bea9";
-        var apiUrl = `https://api.openweathermap.org/data/3.0/onecall?lat=${latitude}&lon=${longitude}&exclude=minutely,daily&appid=${apiKey}`;
+        var apiUrl = `https://api.openweathermap.org/data/3.0/onecall?lat=${latitude}&lon=${longitude}&units=metric&exclude=minutely,daily&appid=${apiKey}`;
         $.ajax({
             url: apiUrl,
             type: "GET",
