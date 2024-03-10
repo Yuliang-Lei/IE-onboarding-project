@@ -1,0 +1,10 @@
+name: r-deploy-test
+title:
+username: skin-cancer-onboarding
+account: skin-cancer-onboarding
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 11436843
+bundleId: 8352575
+url: https://skin-cancer-onboarding.shinyapps.io/r-deploy-test/
+version: 1
