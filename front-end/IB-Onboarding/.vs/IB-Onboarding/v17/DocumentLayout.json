@@ -3,11 +3,11 @@
   "WorkspaceRootPath": "F:\\Repositories\\IE-onboarding-project\\front-end\\IB-Onboarding\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0B92B336-9E68-444B-88F4-E6DAF9DECD41}|IB-Onboarding\\IB-Onboarding.csproj|F:\\Repositories\\IE-onboarding-project\\front-end\\IB-Onboarding\\ib-onboarding\\views\\home\\reminder.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{0B92B336-9E68-444B-88F4-E6DAF9DECD41}|IB-Onboarding\\IB-Onboarding.csproj|f:\\repositories\\ie-onboarding-project\\front-end\\ib-onboarding\\ib-onboarding\\views\\home\\reminder.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{0B92B336-9E68-444B-88F4-E6DAF9DECD41}|IB-Onboarding\\IB-Onboarding.csproj|solutionrelative:ib-onboarding\\views\\home\\reminder.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0B92B336-9E68-444B-88F4-E6DAF9DECD41}|IB-Onboarding\\IB-Onboarding.csproj|f:\\repositories\\ie-onboarding-project\\front-end\\ib-onboarding\\ib-onboarding\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{0B92B336-9E68-444B-88F4-E6DAF9DECD41}|IB-Onboarding\\IB-Onboarding.csproj|F:\\Repositories\\IE-onboarding-project\\front-end\\IB-Onboarding\\ib-onboarding\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{0B92B336-9E68-444B-88F4-E6DAF9DECD41}|IB-Onboarding\\IB-Onboarding.csproj|solutionrelative:ib-onboarding\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
@@ -132,7 +132,7 @@
               "RelativeDocumentMoniker": "IB-Onboarding\\Views\\Home\\Reminder.cshtml",
               "ToolTip": "F:\\Repositories\\IE-onboarding-project\\front-end\\IB-Onboarding\\IB-Onboarding\\Views\\Home\\Reminder.cshtml",
               "RelativeToolTip": "IB-Onboarding\\Views\\Home\\Reminder.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAABZAAAA",
+              "ViewState": "AQIAADkAAAAAAAAAAAAAAEUAAAA3AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-03-08T11:57:45.822Z",
               "EditorCaption": ""
@@ -147,8 +147,7 @@
               "RelativeToolTip": "IB-Onboarding\\Views\\Home\\Index.cshtml",
               "ViewState": "AQIAAB4AAAAAAAAAAAAAACgAAAAVAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-03-08T11:22:16.47Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-08T11:22:16.47Z"
             },
             {
               "$type": "Document",

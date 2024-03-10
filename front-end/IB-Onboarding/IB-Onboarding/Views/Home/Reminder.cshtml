@@ -66,6 +66,7 @@
             for (var date in groupedReminders) {
                 var dateHeader = document.createElement('span');
                 dateHeader.className = "badge text-bg-primary";
+                dateHeader.style.marginTop = "20px";
                 dateHeader.style.marginBottom = "10px";
                 dateHeader.textContent = date;
                 trackContainer.appendChild(dateHeader);

@@ -19,6 +19,7 @@
             </div>
         </div>
         <div class="tab-pane fade" id="v-pills-track" role="tabpanel" aria-labelledby="v-pills-track-tab" tabindex="0">
+            <h4>When you click on reminder botton, the time you click will show on below:</h4>
             <div id="trackContainer"></div> <!-- Container for the cards -->
         </div>
     </div>
@@ -65,6 +66,7 @@
             for (var date in groupedReminders) {
                 var dateHeader = document.createElement('span');
                 dateHeader.className = "badge text-bg-primary";
+                dateHeader.style.marginTop = "20px";
                 dateHeader.style.marginBottom = "10px";
                 dateHeader.textContent = date;
                 trackContainer.appendChild(dateHeader);
