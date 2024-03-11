@@ -13,6 +13,12 @@ namespace IB_Onboarding.Controllers
     public class postcodes_geoController : Controller
     {
         private locationModel db = new locationModel();
+        private locationModel @object;
+
+        public postcodes_geoController(locationModel @object)
+        {
+            this.@object = @object;
+        }
 
         // GET: postcodes_geo
         public ActionResult Index(string searchString)
